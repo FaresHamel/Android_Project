@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".error.ErrorFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_opps_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oops !"
+            android:textColor="#BDBDBD"
+            android:textSize="30sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/image_view_internet_connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/icons8_cloud_connection" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:paddingBottom="50dp">
+
+        <ProgressBar
+            android:id="@+id/progress_try_again_internet_connection"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textview_alert_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Somthing went wrong Please try again"
+            android:textColor="#BDBDBD" />
+
+        <Button
+            android:id="@+id/btn_click_try_again"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_try_again_shape"
+            android:elevation="0sp"
+            android:text="Try Again"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textFontWeight="500"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</LinearLayout>

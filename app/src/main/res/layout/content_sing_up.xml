@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:fillViewport="true"
+    android:isScrollContainer="true"
+    android:measureAllChildren="true"
+    android:paddingBottom="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:lineHeight="17dp"
+            android:paddingTop="10dp"
+            android:text="Sing up with your Email and number phone you use"
+            android:textColor="@color/ColorTextThree"
+            android:textFontWeight="400"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="26dp"
+            android:paddingTop="5dp"
+            android:paddingRight="26dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="user nmae"
+                    android:textColor="@color/ColorTextThree" />
+
+                <EditText
+                    android:id="@+id/user_name_sing_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sheap_edit_text"
+                    android:cursorVisible="true"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColorHint="#111"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="First name"
+                    android:textColor="@color/ColorTextThree" />
+
+                <EditText
+                    android:id="@+id/first_name_sing_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sheap_edit_text"
+                    android:cursorVisible="true"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColorHint="#111"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Last name"
+                    android:textColor="@color/ColorTextThree" />
+
+                <EditText
+                    android:id="@+id/last_name_sing_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sheap_edit_text"
+                    android:cursorVisible="true"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Phone number"
+                    android:textColor="@color/ColorTextThree" />
+
+                <EditText
+                    android:id="@+id/number_phone_sing_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sheap_edit_text"
+                    android:cursorVisible="true"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Email"
+                    android:textColor="@color/ColorTextThree" />
+
+                <EditText
+                    android:id="@+id/emil_sing_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sheap_edit_text"
+                    android:cursorVisible="true"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Password"
+                    android:textColor="@color/ColorTextThree" />
+
+                <EditText
+                    android:id="@+id/passord_sing_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sheap_edit_text"
+                    android:cursorVisible="true"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:layout_marginRight="7dp"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="5dp"
+                       android:fontFamily="sans-serif"
+                       android:text="City"
+                       android:textColor="@color/ColorTextThree" />
+
+                   <EditText
+                       android:id="@+id/city_sing_up"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/sheap_edit_text"
+                       android:cursorVisible="true"
+                       android:inputType="textCapWords"
+                       android:padding="10dp"
+                       android:textColorHint="#111"
+                       android:textCursorDrawable="@drawable/cursor" />
+
+               </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="7dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Ville"
+                        android:textColor="@color/ColorTextThree" />
+
+                    <EditText
+                        android:id="@+id/ville_sing_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sheap_edit_text"
+                        android:cursorVisible="true"
+                        android:inputType="textCapWords"
+                        android:padding="10dp"
+                        android:textColorHint="#111"
+                        android:textCursorDrawable="@drawable/cursor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkbox_sing_up"
+                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/ColorTextSecondary"
+                    android:checked="true"
+                    android:enabled="true"
+                    android:text="Accenpt all terms and condition ?"
+                    android:textColor="@color/ColorTextThree" />
+
+                <Button
+                    android:id="@+id/login_btn_create_new_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/sheap_edit_text"
+                    android:backgroundTint="#FF813B"
+                    android:text="Sing up"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
